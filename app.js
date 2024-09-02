@@ -7,7 +7,7 @@ const bookRoute = require('./routes/bookRoute');
 const originOptions = {
     origin:"http://localhost:3000",
     origin:"http://localhost:3500",
-    origin:"http://192.168.1.113:3000"
+    origin:"http://192.168.1.113:3000" //Replace with your Local Network Address here
 }
 
 app.use(cors({
