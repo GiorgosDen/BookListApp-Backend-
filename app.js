@@ -10,7 +10,11 @@ const originOptions = {
     origin:"http://192.168.1.113:3000"
 }
 
-app.use(cors(originOptions));
+app.use(cors({
+    origin:originOptions,
+    credentials:true,
+}));
+
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use('/myBooks',bookRoute);
