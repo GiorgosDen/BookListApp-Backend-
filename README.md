@@ -8,3 +8,5 @@ This project provides an API to take, delete, or add books on a server (GET, POS
 
 The app runs locally at the address: http://localhost:3500/ 
 (http://localhost:3500/myBooks to take access)
+
+**!!!Note: The URL for connecting to the cluster is intentionally exposed in the server.gs file to allow connection with the project's simple installation. This is "illegal" for security reasons, but it concerns a simple database (only 1 table) in Atlas, having an account from a disposable email.**
